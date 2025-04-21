@@ -3,7 +3,6 @@ import path,{dirname} from "path";
 import { fileURLToPath } from "url";
 
 const copy = async () => {
-  // Write your code here
   const __filename = dirname(fileURLToPath(import.meta.url));
 
   const filePath = path.join(__filename, "files");
@@ -22,7 +21,6 @@ const copy = async () => {
                 fs.cp(filePath, fileCopyPath, { recursive: true }, (err) => {
                     if (err) {
                         console.error(err);
-                        return;
                     }
                 });
                 return;
