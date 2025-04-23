@@ -23,7 +23,6 @@ const copy = async () => {
                         console.error(err);
                     }
                 });
-                return;
             }    
         })   
 
