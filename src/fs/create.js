@@ -15,7 +15,6 @@ const create = async () => {
         fs.writeFile(path.join(__dirname, 'files', 'fresh.txt'), text, (err) => {
             if (err) {
                 console.error('Error:', err);
-                return;
             }
         });    
     })    

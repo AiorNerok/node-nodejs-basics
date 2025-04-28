@@ -27,10 +27,8 @@ const rename = async () => {
             fs.rename(filePath, fileCopyPath, (err) => {
                 if (err) {
                     console.error('FS operation failed');
-                    return;
                 }
-            }
-            );
+            });
         })
     })
 

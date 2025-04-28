@@ -12,7 +12,6 @@ const remove = async () => {
     fs.unlink(filePath, (err) => {
         if (err) {
             console.error(err_message);
-            return;
         }
     });
 };
